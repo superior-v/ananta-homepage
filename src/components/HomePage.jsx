@@ -10,6 +10,16 @@ import {
   MapPin,
 } from "lucide-react";
 
+import logo from "../assets/logo.svg";
+import logo1 from "../assets/logo1.png";
+import tir1 from "../assets/tir1.png";
+import tir2 from "../assets/tir2.png";
+import tir3 from "../assets/tir3.png";
+import tir4 from "../assets/tir4.png";
+import img1 from "../assets/img1.png";
+import img2 from "../assets/img2.png";
+import img3 from "../assets/img3.png";
+
 // Header Component
 const Header = () => {
   const navItems = ["Home", "About Us", "Products", "My Wall", "Contact Us"];
@@ -21,7 +31,7 @@ const Header = () => {
           <div className="bg-white rounded-2xl px-6 py-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-                src="/src/assets/logo.svg"
+                src={logo}
                 alt="Ananta Rubber Logo"
                 className="h-12 w-auto object-contain"
               />
@@ -112,7 +122,7 @@ const AboutSection = () => {
           <div className="flex flex-col md:flex-row md:items-start md:gap-8 items-center">
             <div className="flex items-center justify-center mb-6 md:mb-0 flex-shrink-0">
               <img
-                src="/src/assets/logo1.png"
+                src={logo1}
                 alt="Ananta spinning logo"
                 className="h-40 w-40 md:h-56 md:w-56 lg:h-72 lg:w-72 object-contain animate-spin"
                 style={{ animationDuration: "8s" }}
@@ -154,28 +164,28 @@ const ProductsSection = () => {
     {
       id: 1,
       title: "Butyl Tubes",
-      image: "/src/assets/tir1.png",
+      image: tir1,
       description:
         "Our butyl tubes offer high resistance and strength against tension and tearing, with advanced air leaking ensuring premium quality for trucks, passenger, and two-wheel tyres.",
     },
     {
       id: 2,
       title: "Curing Bags",
-      image: "/src/assets/tir2.png",
+      image: tir2,
       description:
         "Our Butyl Rubber Curing Bags, used for tyre retreading, are valued for durability and long service life, meeting strict quality standards and client specifications with consistent reliability.",
     },
     {
       id: 3,
       title: "Envelopes",
-      image: "/src/assets/tir3.png",
+      image: tir3,
       description:
         "We manufacture premium envelopes for the global retreading industry, using heat resistant polymers and imported butyl rubber to ensure long service life and lower cost per cure.",
     },
     {
       id: 4,
       title: "Flaps",
-      image: "/src/assets/tir4.png",
+      image: tir4,
       description:
         "We serve a complete portfolio of Tyre Flaps. Our Tyre Flaps protect the tyre against damage and alterations. These products have wear resistance and are highly sustainable and effective.",
     },
@@ -319,7 +329,7 @@ const ManufacturingSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-gray-800">
             <img
-              src="/src/assets/img1.png"
+              src={img1}
               alt="Ananta Rubber Manufacturing Floor"
               className="w-full h-full object-cover"
               onError={(e) => {
@@ -480,7 +490,7 @@ const ContactSection = () => {
             </h2>
             <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-2xl mb-8 border-4 border-white">
               <img
-                src="/src/assets/img2.png"
+                src={img2}
                 alt="CEO - Ananta Rubber"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -632,7 +642,7 @@ const NewsAndFooter = () => {
               {" "}
               {/* removed opacity-30 grayscale */}
               <img
-                src="/src/assets/img3.png"
+                src={img3}
                 alt="Vehicle types"
                 className="w-full h-auto object-contain opacity-100 filter-none"
                 onError={(e) => {
